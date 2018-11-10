@@ -66,18 +66,16 @@ driver = webdriver.Chrome('/home/dsawlani/chromedriver',chrome_options=chrome_op
 
 
 def init_driver():
- #C:/Users/dhava/Desktop/chromedriver.exe
-     # initiate the driver:
-	 chrome_options = Options()
-	 chrome_options.add_argument('--headless')
-	 chrome_options.add_argument('--no-sandbox')
-	 chrome_options.add_argument('--disable-dev-shm-usage')
-	 driver = webdriver.Chrome('/home/dsawlani/chromedriver',chrome_options=chrome_options)
+	chrome_options = Options()
+	chrome_options.add_argument('--headless')
+	chrome_options.add_argument('--no-sandbox')
+	chrome_options.add_argument('--disable-dev-shm-usage')
+	driver = webdriver.Chrome('/home/dsawlani/chromedriver',chrome_options=chrome_options)
      
-     # set a default wait time for the browser [5 seconds here]:
-     driver.wait = WebDriverWait(driver, 5)
+    # set a default wait time for the browser [5 seconds here]:
+	driver.wait = WebDriverWait(driver, 5)
  
-     return driver
+    return driver
 
 
 def close_driver(driver):
