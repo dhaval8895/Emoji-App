@@ -47,7 +47,6 @@ from bs4 import BeautifulSoup as bs
 import time
 import pandas as pd
 import datetime
-from  multiprocessing import Process
 import threading
 
 from bokeh.io import show, output_file

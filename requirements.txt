@@ -1,0 +1,8 @@
+bokeh
+pandas
+numpy
+holoviews
+emoji
+tweepy
+bs4
+datetime
